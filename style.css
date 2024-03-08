@@ -1,0 +1,202 @@
+/* Genel Stiller */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #1a2980, #26d0ce);
+  color: #022369;
+  gap: 50px;
+  text-align: center;
+}
+
+/* Başlık Stilleri */
+.heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #06558a;
+}
+
+/* Ana Container Stilleri */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Ana Container Hover Efekti */
+.container:hover {
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Ana Giriş Stilleri */
+.main {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main > input {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-style: italic;
+  padding: 15px;
+  border-bottom: 3px solid #3498db;
+  transition: border-bottom 0.3s ease;
+}
+
+/* Ana Giriş Hover Efekti */
+.main:hover input {
+  border-bottom: 3px solid #2980b9;
+}
+
+/* Form Stilleri */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Seçim Kutusu Stilleri */
+#filter-select {
+  border: 2px solid #3498db;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  transition: border 0.3s ease;
+}
+
+/* Buton Stilleri */
+.double {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+input {
+  border: 2px solid #3498db;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #3498db;
+  color: #ecf0f1;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Buton Hover Efekti */
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Durum Bilgisi Stilleri */
+.form-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+/* Toplam Stilleri */
+.total {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+.total span {
+  color: #f39c12;
+}
+
+/* Liste Stilleri */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Harcama Stilleri */
+.spending {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+/* Ödenmiş Harcama Stilleri */
+.payed {
+  opacity: 0.6;
+}
+
+.payed h2:nth-child(1) {
+  color: #3498db;
+  text-decoration: line-through;
+}
+
+/* Butonlar Stilleri */
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(0);
+}
+
+/* Buton Hover Efekti */
+.buttons img:hover {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
